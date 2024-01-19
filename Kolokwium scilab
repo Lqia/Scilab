@@ -1,0 +1,71 @@
+//Zad1
+//a)
+
+zad1a = atan(1/(5/12));
+
+disp(zad1a);
+
+//b)
+
+macierz = [30 -2 3; -2 3 8; 6 4 0];
+
+zad1b = det(macierz);
+
+disp(zad1b);
+
+//c)
+
+e = 0.25;
+
+Rz = 34;
+
+Rw = 23.34;
+
+I = e/(Rz+Rw)
+
+disp(I);
+
+//d)
+
+sum = 0;
+
+for n = 5:50
+    sum = sum+((n+7)/(n^3 +2));
+end
+
+disp(sum);
+
+//Zad2
+
+a = -10:0.1:10;
+
+b1 = cos(2*a);
+b2 = a.^2 - a + 1;
+
+scf(0); 
+plot(a, b1, 'r'); 
+plot(a, b2y2, 'b');
+
+legend(['f = cos(2x)', 'f = x^2 - x + 1']);
+
+
+xtitle('Wykres funkcji f = cos(2x) i f = x^2 - x + 1', 'x', 'f(x)');
+
+
+//Zad3
+
+rok = [2010, 2015, 2020];
+przychod = [42332, 23243, 33244];
+koszty = [2323, 2332, 3212];
+zyski = [3233, 4323, 5986];
+
+scf(1); 
+bar(rok, [przychod; koszty; zyski], 'stacked');
+
+// Dodanie legendy
+legend(['Przychód', 'Koszty', 'Zyski']);
+
+// Dodanie tytułu i etykiet osi
+xtitle('Wykres słupkowy przychodów, kosztów i zysków', 'Rok', 'Wartość');
+
+
